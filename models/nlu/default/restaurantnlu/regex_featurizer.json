@@ -1,0 +1,34 @@
+[
+    {
+        "name": "affirm",
+        "pattern": "((ye)|(Ye)|(YE))[^\\s]*"
+    },
+    {
+        "name": "deny",
+        "pattern": "((no)|(No)|(NO))[^\\s]*"
+    },
+    {
+        "name": "email",
+        "pattern": "\\S+@\\S+"
+    },
+    {
+        "name": "greet",
+        "pattern": "((hey)|(hi)|(Hey)|(Hi)|(Hello)|(hello))[^\\s]*"
+    },
+    {
+        "name": "location",
+        "pattern": "\\b\\s*(?i)((Ahmedabad)|(Bangalore)|(Chennai)|(Delhi)|(Hyderabad)|(Kolkata)|(Mumbai)|(Pune)|(Agra)|(Ajmer)|(Aligarh)|(Allahabad)|(Amravati)|(Amritsar)|(Asansol)|(Aurangabad)|(Bareilly)|(Belgaum)|(Bhavnagar)|(Bhiwandi)|(Bhopal)|(Bhubaneswar)|(Bikaner)|(Bokaro Steel City)|(Chandigarh)|(Coimbatore)|(Cuttack)|(Dehradun)|(Dhanbad)|(Durg-Bhilai Nagar)|(Durgapur)|(Erode)|(Faridabad)|(Firozabad)|(Ghaziabad)|(Gorakhpur)|(Gulbarga)|(Guntur)|(Gurgaon)|(Guwahati)|(Gwalior)|(Hubli-Dharwad)|(Indore)|(Jabalpur)|(Jaipur)|(Jalandhar)|(Jammu)|(Jamnagar)|(Jamshedpur)|(Jhansi)|(Jodhpur)|(Kannur)|(Kanpur)|(Kakinada)|(Kochi)|(Kottayam)|(Kolhapur)|(Kollam)|(Kota)|(Kozhikode)|(Kurnool)|(Lucknow)|(Ludhiana)|(Madurai)|(Malappuram)|(Mathura)|(Goa)|(Mangalore)|(Meerut)|(Moradabad)|(Mysore)|(Nagpur)|(Nanded)|(Nashik)|(Nellore)|(Noida)|(Palakkad)|(Patna)|(Pondicherry)|(Raipur)|(Rajkot)|(Rajahmundry)|(Ranchi)|(Rourkela)|(Salem)|(Sangli)|(Siliguri)|(Solapur)|(Srinagar)|(Sultanpur)|(Surat)|(Thiruvananthapuram)|(Thrissur)|(Tiruchirappalli)|(Tirunelveli)|(Tiruppur)|(Ujjain)|(Vijayapura)|(Vadodara)|(Varanasi)|(Vasai-Virar)|(Vijayawada)|(Visakhapatnam)|(Warangal))"
+    },
+    {
+        "name": "lower_price_limit",
+        "pattern": "300"
+    },
+    {
+        "name": "upper_price_limit",
+        "pattern": "700"
+    },
+    {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+    }
+]
