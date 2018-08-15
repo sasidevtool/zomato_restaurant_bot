@@ -8,10 +8,6 @@
         "pattern": "((no)|(No)|(NO))[^\\s]*"
     },
     {
-        "name": "email",
-        "pattern": "\\S+@\\S+"
-    },
-    {
         "name": "greet",
         "pattern": "((hey)|(hi)|(Hey)|(Hi)|(Hello)|(hello))[^\\s]*"
     },

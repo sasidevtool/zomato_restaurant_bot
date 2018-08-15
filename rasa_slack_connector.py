@@ -32,12 +32,22 @@ class SlackBot(OutputChannel):
 
 
 class SlackInput(HttpInputComponent):
+
 	def __init__(self, slack_dev_token, slack_verification_token, slack_client, debug_mode):
 		self.slack_dev_token = slack_dev_token
 		self.debug_mode = debug_mode
 		self.slack_client = slack_client
 		self.slack_verification_token = slack_verification_token
 		
+		
+	def __init__(self, slack_dev_token, slack_verification_token, slack_client, debug_mode, errors_ignore_retry=None):
+		self.slack_dev_token = slack_dev_token
+		self.debug_mode = debug_mode
+		self.slack_client = slack_client
+		self.slack_verification_token = slack_verification_token
+		self.errors_ignore_retry = errors_ignore_retry or ('http_timeout',)
+		
+		 
 	def blueprint(self, on_new_message):
 		from flask import Flask, request, Response
 		slack_webhook = Blueprint('slack_webhook', __name__)
@@ -58,10 +68,16 @@ class SlackInput(HttpInputComponent):
 				user = messaging_events.get('user')
 				text = messaging_events.get('text')
 				bot = messaging_events.get('bot_id')
+				retry_reason = request.headers.environ.get('HTTP_X_SLACK_RETRY_REASON')
+				retry_count = request.headers.environ.get('HTTP_X_SLACK_RETRY_NUM')
+				if retry_count and retry_reason in self.errors_ignore_retry:
+					logger.warning("Received retry #{} request from slack"
+                           " due to {}".format(retry_count, retry_reason))
+					return Response(status=201, headers={'X-Slack-No-Retry': 1})
 				if bot == None:
 					on_new_message(UserMessage(text, SlackBot(self.slack_verification_token, channel)))
 					
-			return Response(), 200
+			return Response(headers={'X-Slack-No-Retry': 1}), 200
 			
 		return slack_webhook
 				

@@ -18,13 +18,15 @@ action_names:
 - utter_no_restaurants_found
 - utter_restaurant_search_results
 - utter_email_sent_successfully
+- utter_email_not_recognized
 - action_restaurant
 - validate_location
-- action_email
 - validate_cuisine
 - validate_price
 - get_all_search_results
+- action_email
 - action_restarted
+- action_bye
 actions:
 - utter_greet
 - utter_goodbye
@@ -42,13 +44,15 @@ actions:
 - utter_no_restaurants_found
 - utter_restaurant_search_results
 - utter_email_sent_successfully
+- utter_email_not_recognized
 - actions.ActionSearchRestaurants
 - actions.ActionValidateLocation
-- actions.ActionSendEmail
 - actions.ActionValidateCuisine
 - actions.ActionValidatePrice
 - actions.GetAllSearchResults
+- actions.ActionSendEmail
 - actions.ActionRestarted
+- actions.ActionGoodBye
 config:
   store_entities_as_slots: true
 entities:
@@ -126,21 +130,23 @@ templates:
   - text: Do you like me to send the details to your email?
   utter_default:
   - text: Sorry couldn't understand you. Please type again
+  utter_email_not_recognized:
+  - text: Email not recognized - {email}. Please type agian
   utter_email_sent_successfully:
-  - text: Sent the email successfully
+  - text: Sent the email successfully to {email}
   utter_goodbye:
-  - text: goodbye :(
-  - text: Bye-bye
+  - text: goodbye :({location} {email} {price}
+  - text: Bye-bye {location} {email} {price}
   utter_greet:
   - text: hey there! How may i help you
   - text: Hi, How can I help you!
   - text: Hey, How is it going. How May I help you Today
   utter_invalid_cuisine:
-  - text: Sorry! Invalid cuisine input. Please try again
+  - text: Sorry! Invalid cuisine input {cuisine}. Please try again
   utter_invalid_location:
-  - text: Sorry! we dont serve in this city. Enter different city
+  - text: Sorry! we dont serve in this city {location}. Enter different city
   utter_invalid_price_range:
-  - text: Sorry, couldnt recognise the price range. Try different range
+  - text: Sorry, couldnt recognise the price range {price}. Try different range
   utter_no_match_price_range:
   - text: sorry! No restaurants found in this price range. Choose different price
       range

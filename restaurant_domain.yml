@@ -48,8 +48,8 @@ templates:
     - "Hi, How can I help you!"
     - "Hey, How is it going. How May I help you Today"
   utter_goodbye:
-    - "goodbye :("
-    - "Bye-bye"
+    - "goodbye :({location} {email} {price}"
+    - "Bye-bye {location} {email} {price}"
   utter_default:
     - "Sorry couldn't understand you. Please type again"
   utter_ask_cuisine: 
@@ -71,19 +71,21 @@ templates:
     - "To what email should I send the details"
     - "May I know your email to send you the details?"
   utter_invalid_location:
-    - "Sorry! we dont serve in this city. Enter different city"
+    - "Sorry! we dont serve in this city {location}. Enter different city"
   utter_no_match_price_range:
     - "sorry! No restaurants found in this price range. Choose different price range"
   utter_invalid_price_range:
-    - "Sorry, couldnt recognise the price range. Try different range"
+    - "Sorry, couldnt recognise the price range {price}. Try different range"
   utter_invalid_cuisine:
-    - "Sorry! Invalid cuisine input. Please try again"
+    - "Sorry! Invalid cuisine input {cuisine}. Please try again"
   utter_no_restaurants_found:
     - "Sorry! No restaurants found!"
   utter_restaurant_search_results:
     - "Found the following search results \n {query_restaurant_search}"
   utter_email_sent_successfully:
-    - "Sent the email successfully"
+    - "Sent the email successfully to {email}"
+  utter_email_not_recognized:
+    - "Email not recognized - {email}. Please type agian"
 
 actions:
 - utter_greet
@@ -102,10 +104,12 @@ actions:
 - utter_no_restaurants_found
 - utter_restaurant_search_results
 - utter_email_sent_successfully
+- utter_email_not_recognized
 - actions.ActionSearchRestaurants
 - actions.ActionValidateLocation
-- actions.ActionSendEmail
 - actions.ActionValidateCuisine
 - actions.ActionValidatePrice
 - actions.GetAllSearchResults
+- actions.ActionSendEmail
 - actions.ActionRestarted
+- actions.ActionGoodBye

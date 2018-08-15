@@ -43,12 +43,14 @@
     "prev_utter_no_restaurants_found",
     "prev_utter_restaurant_search_results",
     "prev_utter_email_sent_successfully",
+    "prev_utter_email_not_recognized",
     "prev_action_restaurant",
     "prev_validate_location",
-    "prev_action_email",
     "prev_validate_cuisine",
     "prev_validate_price",
     "prev_get_all_search_results",
-    "prev_action_restarted"
+    "prev_action_email",
+    "prev_action_restarted",
+    "prev_action_bye"
   ]
 }

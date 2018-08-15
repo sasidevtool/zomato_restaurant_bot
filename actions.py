@@ -86,6 +86,7 @@ class ActionSearchRestaurants(Action):
 		cuisine = tracker.get_slot('cuisine')
 		price_range = tracker.get_slot('price')
 		search_results = pd.read_json(tracker.get_slot('full_restaurant_search'))
+
 		if(price_range=="1"):
 			filterd_results = search_results[search_results['Average budget for two people'] <=300]
 			filterd_results.sort_values('Zomato user rating',ascending=False,inplace=True)
@@ -183,21 +184,26 @@ class ActionValidatePrice(Action):
 		else:
 			return [SlotSet('price',price)]
 
-			
+import re
 class ActionSendEmail(Action):
 	def name(self):
 		return 'action_email'
 		
 	def run(self, dispatcher, tracker, domain):
-	
+		price_range = tracker.get_slot('price')
 		email = tracker.get_slot('email')
+		list_email = re.findall('([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)',email) 
+		
 		msg = MIMEMultipart('alternative')
 		
 		search_results = pd.read_json(tracker.get_slot('full_restaurant_search'))
-		price_range = tracker.get_slot('price')
-		if(len(search_results)==0):
+		if(len(list_email)==0):
+			dispatcher.utter_template("Email Not Found", tracker)
+			return[SlotSet('email',email)]
+		elif(len(search_results)==0):
 			msg.attach(MIMEText("Sorry no results found",'html'))
 		else:
+			email = list_email[0]
 			if(price_range=="1"):
 				filterd_results = search_results[search_results['Average budget for two people'] <=300]
 				filterd_results.sort_values('Zomato user rating',ascending=False,inplace=True)
@@ -224,17 +230,19 @@ class ActionSendEmail(Action):
 		msg['From'] = 'botzomato@gmail.com'
 		msg['To'] = email
 
-		# Send the message via our own SMTP server.
+			# Send the message via our own SMTP server.
 
-		#server = smtplib.SMTP('smtp.gmail.com:587')
+			#server = smtplib.SMTP('smtp.gmail.com:587')
 		server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
 		server.ehlo()
-		#server.starttls()
+			#server.starttls()
 		server.login('botzomato@gmail.com','IIITBtest2018')
 		server.send_message(msg)
 		server.quit()
 		
 		dispatcher.utter_template("utter_email_sent_successfully", tracker)
+		return[SlotSet('email',email)]
+
 		
 class ActionValidatePrice(Action):
 	def name(self):
@@ -253,11 +261,20 @@ class ActionValidatePrice(Action):
 		else:
 			return [SlotSet('price',price)]
 			
+class ActionGoodBye(Action):
+	def name(self):
+		return 'action_bye'
+		
+	def run(self, dispatcher, tracker, domain):
+		dispatcher.utter_template("utter_goodbye",tracker)
+		return[AllSlotsReset()]
+			
 class ActionRestarted(Action): 	
     def name(self): 		
         return 'action_restarted' 	
     def run(self, dispatcher, tracker, domain): 
-        return[Restarted()] 
+        return[Restarted()]
+		
 class ActionSlotReset(Action): 	
     def name(self): 		
         return 'action_slot_reset' 	

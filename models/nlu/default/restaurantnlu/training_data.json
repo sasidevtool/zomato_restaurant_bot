@@ -1548,6 +1548,462 @@
           }
         ],
         "text": "lunch in the area of varanasi"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 46,
+            "value": "<mailto:sasi.424@gmail.com|sasi.424@gmail.com>",
+            "entity": "email"
+          }
+        ],
+        "text": "<mailto:sasi.424@gmail.com|sasi.424@gmail.com>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 44,
+            "value": "<mailto:abbbc@yahoo.co.in|abbbc@yahoo.co.in>",
+            "entity": "email"
+          }
+        ],
+        "text": "<mailto:abbbc@yahoo.co.in|abbbc@yahoo.co.in>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 38,
+            "value": "<mailto:atta@gmail.com|atta@gmail.com>",
+            "entity": "email"
+          }
+        ],
+        "text": "<mailto:atta@gmail.com|atta@gmail.com>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 44,
+            "value": "<mailto:madanm@icloud.com|madanm@icloud.com>",
+            "entity": "email"
+          }
+        ],
+        "text": "<mailto:madanm@icloud.com|madanm@icloud.com>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 44,
+            "value": "<mailto:hampton@yahoo.com|hampton@yahoo.com>",
+            "entity": "email"
+          }
+        ],
+        "text": "<mailto:hampton@yahoo.com|hampton@yahoo.com>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 44,
+            "value": "<mailto:yfreund@gmail.com|yfreund@gmail.com>",
+            "entity": "email"
+          }
+        ],
+        "text": "<mailto:yfreund@gmail.com|yfreund@gmail.com>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 46,
+            "value": "<mailto:podmaster@live.com|podmaster@live.com>",
+            "entity": "email"
+          }
+        ],
+        "text": "<mailto:podmaster@live.com|podmaster@live.com>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 48,
+            "value": "<mailto:flavell@hotmail.com|flavell@hotmail.com>",
+            "entity": "email"
+          }
+        ],
+        "text": "<mailto:flavell@hotmail.com|flavell@hotmail.com>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 44,
+            "value": "<mailto:gospodin@yahoo.ca|gospodin@yahoo.ca>",
+            "entity": "email"
+          }
+        ],
+        "text": "<mailto:gospodin@yahoo.ca|gospodin@yahoo.ca>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 46,
+            "value": "<mailto:schwaang@yahoo.com|schwaang@yahoo.com>",
+            "entity": "email"
+          }
+        ],
+        "text": "<mailto:schwaang@yahoo.com|schwaang@yahoo.com>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 46,
+            "value": "<mailto:smallpaul@live.com|smallpaul@live.com>",
+            "entity": "email"
+          }
+        ],
+        "text": "<mailto:smallpaul@live.com|smallpaul@live.com>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 40,
+            "value": "<mailto:mcnihil@msn.com|mcnihil@msn.com>",
+            "entity": "email"
+          }
+        ],
+        "text": "<mailto:mcnihil@msn.com|mcnihil@msn.com>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 44,
+            "value": "<mailto:bjoern@icloud.com|bjoern@icloud.com>",
+            "entity": "email"
+          }
+        ],
+        "text": "<mailto:bjoern@icloud.com|bjoern@icloud.com>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 42,
+            "value": "<mailto:sscorpio@mac.com|sscorpio@mac.com>",
+            "entity": "email"
+          }
+        ],
+        "text": "<mailto:sscorpio@mac.com|sscorpio@mac.com>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 40,
+            "value": "<mailto:mcnihil@msn.com|mcnihil@msn.com>",
+            "entity": "email"
+          }
+        ],
+        "text": "<mailto:mcnihil@msn.com|mcnihil@msn.com>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 21,
+            "end": 67,
+            "value": "<mailto:sasi.424@gmail.com|sasi.424@gmail.com>",
+            "entity": "email"
+          }
+        ],
+        "text": "Please send email to <mailto:sasi.424@gmail.com|sasi.424@gmail.com>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 32,
+            "end": 88,
+            "value": "<mailto:bobby.james@yahoo.co.in|bobby.james@yahoo.co.in>",
+            "entity": "email"
+          }
+        ],
+        "text": "Of course you can send email to <mailto:bobby.james@yahoo.co.in|bobby.james@yahoo.co.in>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 12,
+            "end": 72,
+            "value": "<mailto:prashanth.758@yahoo.co.in|prashanth.758@yahoo.co.in>",
+            "entity": "email"
+          }
+        ],
+        "text": "My email is <mailto:prashanth.758@yahoo.co.in|prashanth.758@yahoo.co.in>"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 21,
+            "entity": "email",
+            "start": 2,
+            "value": "manuals@outlook.com"
+          }
+        ],
+        "text": "\\\\manuals@outlook.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 18,
+            "entity": "email",
+            "start": 2,
+            "value": "uraeus@gmail.com"
+          }
+        ],
+        "text": "\\\\uraeus@gmail.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 20,
+            "entity": "email",
+            "start": 2,
+            "value": "ideguy@outlook.com"
+          }
+        ],
+        "text": "\\\\ideguy@outlook.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 20,
+            "entity": "email",
+            "start": 2,
+            "value": "bonmots@icloud.com"
+          }
+        ],
+        "text": "\\\\bonmots@icloud.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 20,
+            "entity": "email",
+            "start": 2,
+            "value": "bockelboy@live.com"
+          }
+        ],
+        "text": "\\\\bockelboy@live.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 23,
+            "entity": "email",
+            "start": 2,
+            "value": "pemungkah@hotmail.com"
+          }
+        ],
+        "text": "\\\\pemungkah@hotmail.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 16,
+            "entity": "email",
+            "start": 2,
+            "value": "gommix@msn.com"
+          }
+        ],
+        "text": "\\\\gommix@msn.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 22,
+            "entity": "email",
+            "start": 2,
+            "value": "mallanmba@icloud.com"
+          }
+        ],
+        "text": "\\\\mallanmba@icloud.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 22,
+            "entity": "email",
+            "start": 2,
+            "value": "syncnine@hotmail.com"
+          }
+        ],
+        "text": "\\\\syncnine@hotmail.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 23,
+            "entity": "email",
+            "start": 2,
+            "value": "crowemojo@outlook.com"
+          }
+        ],
+        "text": "\\\\crowemojo@outlook.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 23,
+            "entity": "email",
+            "start": 2,
+            "value": "gmcgath@optonline.net"
+          }
+        ],
+        "text": "\\\\gmcgath@optonline.net"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 18,
+            "entity": "email",
+            "start": 2,
+            "value": "martyloo@msn.com"
+          }
+        ],
+        "text": "\\\\martyloo@msn.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 20,
+            "entity": "email",
+            "start": 2,
+            "value": "notaprguy@yahoo.ca"
+          }
+        ],
+        "text": "\\\\notaprguy@yahoo.ca"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "email",
+            "start": 2,
+            "value": "weidai@yahoo.ca"
+          }
+        ],
+        "text": "\\\\weidai@yahoo.ca"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 17,
+            "entity": "email",
+            "start": 2,
+            "value": "anicolao@me.com"
+          }
+        ],
+        "text": "\\\\anicolao@me.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 20,
+            "entity": "email",
+            "start": 2,
+            "value": "raides@hotmail.com"
+          }
+        ],
+        "text": "\\\\raides@hotmail.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 19,
+            "entity": "email",
+            "start": 2,
+            "value": "wmszeliga@msn.com"
+          }
+        ],
+        "text": "\\\\wmszeliga@msn.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 20,
+            "entity": "email",
+            "start": 2,
+            "value": "nachbaur@yahoo.com"
+          }
+        ],
+        "text": "\\\\nachbaur@yahoo.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 16,
+            "entity": "email",
+            "start": 2,
+            "value": "singer@msn.com"
+          }
+        ],
+        "text": "\\\\singer@msn.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "end": 16,
+            "entity": "email",
+            "start": 2,
+            "value": "carcus@mac.com"
+          }
+        ],
+        "text": "\\\\carcus@mac.com"
       }
     ],
     "regex_features": [
@@ -1558,10 +2014,6 @@
       {
         "name": "deny",
         "pattern": "((no)|(No)|(NO))[^\\s]*"
-      },
-      {
-        "name": "email",
-        "pattern": "\\S+@\\S+"
       },
       {
         "name": "greet",

@@ -2,19 +2,10 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
+        "email",
         "cuisine",
-        "price",
         "location",
-        "email"
-      ]
-    },
-    "get_all_search_results": {
-      "slots": [
-        "location",
-        "requested_slot",
-        "cuisine",
-        "price",
-        "full_restaurant_search"
+        "price"
       ]
     },
     "validate_location": {
@@ -32,21 +23,33 @@
         "price"
       ]
     },
+    "get_all_search_results": {
+      "slots": [
+        "requested_slot",
+        "cuisine",
+        "price",
+        "location",
+        "full_restaurant_search"
+      ]
+    },
     "action_restaurant": {
       "slots": [
         "query_restaurant_search"
       ]
     },
-    "utter_goodbye": {
+    "action_bye": {
       "slots": []
     },
     "action_restarted": {
+      "slots": []
+    },
+    "utter_goodbye": {
       "slots": []
     }
   },
   "rasa_core": "0.10.3",
   "max_histories": [
-    5,
+    4,
     5,
     null
   ],
