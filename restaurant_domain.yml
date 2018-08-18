@@ -48,12 +48,12 @@ templates:
     - "Hi, How can I help you!"
     - "Hey, How is it going. How May I help you Today"
   utter_goodbye:
-    - "goodbye :({location} {email} {price}"
-    - "Bye-bye {location} {email} {price}"
+    - "goodbye :("
+    - "Bye-bye"
   utter_default:
     - "Sorry couldn't understand you. Please type again"
   utter_ask_cuisine: 
-    - text: "what kind of cuisine would you like? \n 1. Chinese \n 2. Italian \n 3. South Indian \n 4. North Indian \n 5.Mexican \n6. American"
+    - text: "what kind of cuisine would you like? \n 1. Chinese \n 2. Italian \n 3. South Indian \n 4. North Indian \n 5. Mexican \n 6. American"
 
   utter_ask_price: 
     - text: "what price range you like to search? \n1. < 300 \n2. 300-700 \n3. > 700"

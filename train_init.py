@@ -9,6 +9,10 @@ from rasa_core.policies.keras_policy import KerasPolicy
 from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_core.featurizers import (MaxHistoryTrackerFeaturizer, BinarySingleStateFeaturizer)
 from rasa_core.policies.fallback import FallbackPolicy
+import warnings
+ 
+warnings.filterwarnings('ignore')
+
 if __name__ == '__main__':
 	logging.basicConfig(level='INFO')
 	

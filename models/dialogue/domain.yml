@@ -113,7 +113,7 @@ slots:
 templates:
   utter_ask_cuisine:
   - text: "what kind of cuisine would you like? \n 1. Chinese \n 2. Italian \n 3.\
-      \ South Indian \n 4. North Indian \n 5.Mexican \n6. American"
+      \ South Indian \n 4. North Indian \n 5. Mexican \n 6. American"
   utter_ask_email:
   - text: To what email should I send the details
   - text: May I know your email to send you the details?
@@ -135,8 +135,8 @@ templates:
   utter_email_sent_successfully:
   - text: Sent the email successfully to {email}
   utter_goodbye:
-  - text: goodbye :({location} {email} {price}
-  - text: Bye-bye {location} {email} {price}
+  - text: goodbye :(
+  - text: Bye-bye
   utter_greet:
   - text: hey there! How may i help you
   - text: Hi, How can I help you!

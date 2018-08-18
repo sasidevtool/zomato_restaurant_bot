@@ -13,7 +13,10 @@ from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.featurizers import (MaxHistoryTrackerFeaturizer, BinarySingleStateFeaturizer)
 from rasa_core.policies.fallback import FallbackPolicy
-
+import warnings
+ 
+warnings.filterwarnings('ignore')
+  
 logger = logging.getLogger(__name__)
 
 def train_dialogue(domain_file = 'restaurant_domain.yml',

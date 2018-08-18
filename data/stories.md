@@ -518,3 +518,113 @@
     - utter_goodbye
     - export
 	- action_restarted
+
+## Generated Story 1770751760018779592
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "american", "location": "allahabad"}
+    - slot{"cuisine": "american"}
+    - slot{"location": "allahabad"}
+    - validate_location
+    - slot{"location": "allahabad"}
+    - validate_cuisine
+    - slot{"cuisine": "american"}
+    - get_all_search_results
+    - slot{"location": "allahabad"}
+    - slot{"cuisine": "american"}
+    - slot{"requested_slot": "price"}
+* restaurant_search{"price": "1"}
+    - slot{"price": "1"}
+    - validate_price
+    - slot{"price": "1"}
+    - get_all_search_results
+    - slot{"price": "1"}
+    - slot{"full_restaurant_search": "{\"Restaurant Name\":{\"0\":\"Old School Cafe\",\"1\":\"KFC\",\"2\":\"McDonald's\",\"3\":\"Shahi Darbar\",\"4\":\"Kesarwani Fast Food\"},\"Restaurant locality address\":{\"0\":\"33\\/2\\/A, Stretchy Road, Civil Lines, Allahabad\",\"1\":\"P Square Mall, Civil Lines, Allahabad\",\"2\":\"Shop 4, 34-B, M G Marg, Civil Lines, Allahabad\",\"3\":\"7D\\/2A, Tashkand Marg, Civil Lines, Allahabad\",\"4\":\"Medical Chauraha, George Town, Allahabad\"},\"Average budget for two people\":{\"0\":1000,\"1\":600,\"2\":400,\"3\":250,\"4\":100},\"Zomato user rating\":{\"0\":\"3.8\",\"1\":\"3.5\",\"2\":\"3.4\",\"3\":\"0\",\"4\":\"0\"}}"}
+    - action_restaurant
+    - slot{"query_restaurant_search": "Shahi Darbar in 7D/2A, Tashkand Marg, Civil Lines, Allahabad has been rated 0.0\nKesarwani Fast Food in Medical Chauraha, George Town, Allahabad has been rated 0.0\n"}
+    - utter_restaurant_search_results
+    - utter_ask_send_email
+* affirm
+    - utter_ask_email
+* send_email{"email": "sasi.424@gmail.com"}
+    - slot{"email": "sasi.424@gmail.com"}
+    - action_email
+    - slot{"email": "sasi.424@gmail.com"}
+    - action_bye
+    - reset_slots
+    - export
+	
+## Generated Story -8468521216288161706
+* greet
+    - utter_greet
+* restaurant_search{"location": "jabalpur"}
+    - slot{"location": "jabalpur"}
+    - validate_location
+    - slot{"location": "jabalpur"}
+    - get_all_search_results
+    - slot{"location": "jabalpur"}
+    - slot{"requested_slot": "cuisine"}
+* restaurant_search{"cuisine": "american"}
+    - slot{"cuisine": "american"}
+    - validate_cuisine
+    - slot{"cuisine": "american"}
+    - get_all_search_results
+    - slot{"cuisine": "american"}
+    - slot{"requested_slot": "price"}
+* restaurant_search{"price": "1"}
+    - slot{"price": "1"}
+    - validate_price
+    - slot{"price": "1"}
+    - get_all_search_results
+    - slot{"price": "1"}
+    - slot{"full_restaurant_search": "{\"Restaurant Name\":{\"0\":\"Byg Brewski Brewing Company\",\"1\":\"AB's - Absolute Barbecues\",\"2\":\"TBC Sky Lounge\",\"3\":\"AB's - Absolute Barbecues\",\"4\":\"Flechazo\",\"5\":\"Onesta\",\"6\":\"The Black Pearl\",\"7\":\"Windmills Craftworks\",\"8\":\"Yauatcha\",\"9\":\"Bamboo Hut\",\"10\":\"The Brew and Barbeque\",\"11\":\"Hoot\",\"12\":\"Truffles\",\"13\":\"Biergarten\",\"14\":\"The Black Pearl\",\"15\":\"Big Pitcher\",\"16\":\"House Of Commons\",\"17\":\"ECHOES Koramangala\",\"18\":\"The Boozy Griffin\",\"19\":\"The Globe Grub\",\"20\":\"Truffles\",\"21\":\"Onesta\",\"22\":\"Flechazo\",\"23\":\"Empire Restaurant\",\"24\":\"Toit\",\"25\":\"Communiti\",\"26\":\"The Reservoire\",\"27\":\"Deja Vu Resto Bar\",\"28\":\"Koramangala Social\",\"29\":\"Sidewalk Bar & Kitchen\",\"30\":\"Tipsy Bull - The Bar Exchange\",\"31\":\"Gilly's Restobar\",\"32\":\"The Boozy Griffin\",\"33\":\"Asia Kitchen By Mainland China\",\"34\":\"The Fatty Bao - Asian Gastro Bar\",\"35\":\"MISU\",\"36\":\"Fenny's Lounge And Kitchen\",\"37\":\"Chili's American Grill & Bar\",\"38\":\"Empire Restaurant\",\"39\":\"Chili's American Grill & Bar\",\"40\":\"Big Wong XL\",\"41\":\"Byg Brewski Brewing Company\",\"42\":\"Jalsa Gold\",\"43\":\"Hammered\",\"44\":\"Gilly's Restobar\",\"45\":\"Farzi Cafe\",\"46\":\"Dyu Art Cafe\",\"47\":\"House Of Commons\",\"48\":\"Empire Restaurant\",\"49\":\"The Black Rabbit\",\"50\":\"Arbor Brewing Company\",\"51\":\"JW Kitchen - JW Marriott Bengaluru\",\"52\":\"Brewklyn Microbrewery\",\"53\":\"The Permit Room\",\"54\":\"Shizusan Shophouse & Bar\",\"55\":\"Nasi And Mee\",\"56\":\"Roots\",\"57\":\"Empire Restaurant\",\"58\":\"Myu Bar at Gilly's Redefined\",\"59\":\"Cloud Cafe\",\"60\":\"The Hidden Home\",\"61\":\"Hae Kum Gang\",\"62\":\"The Asian Curry House\",\"63\":\"Tom's Restaurant\",\"64\":\"Sea Rock\",\"65\":\"30 Square\",\"66\":\"Nakkshatra \",\"67\":\"1131 Bar + Kitchen\",\"68\":\"The Yellow Submarine\",\"69\":\"Empire Restaurant\",\"70\":\"The London Curry House\",\"71\":\"Empire Restaurant\",\"72\":\"Foxtrot Gastropub\",\"73\":\"Double Decker\",\"74\":\"Empire Restaurant\",\"75\":\"The Fisherman's Wharf\",\"76\":\"Sotally Tober\",\"77\":\"Meghana Foods\",\"78\":\"Hakuna Matata\",\"79\":\"Church Street Social\"},\"Restaurant locality address\":{\"0\":\"Behind MK Retail, Sarjapur Road, Jabalpur\",\"1\":\"100 Feet Road, 1st Phase, Near Jayadeva Flyover, 2nd Stage, BTM, Jabalpur\",\"2\":\"Astra Hotel, 2795, 27th Main, Sector 1, HSR Layout, Jabalpur\",\"3\":\"90\\/4, 3rd Floor, Outer Ring Road, Munnekollaly Village, Marathahalli, Jabalpur\",\"4\":\"2nd Floor, Plot 120 A3, Santosh Tower, 3rd Road, EPIP Industrial Area, Phase 1, Hoodi Village, Whitefield, Jabalpur\",\"5\":\"215, 216 & 220, Devasandra Village, Kasaba Hobli, New BEL Road, Jabalpur\",\"6\":\"20\\/7, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Jabalpur\",\"7\":\"331, Road 5B, EPIP Area, Next to KTPO, Whitefield, Jabalpur\",\"8\":\"1 MG Mall, MG Road, Jabalpur\",\"9\":\"5 First Floor, SPR Comforts, Jnanabharathi Main Road, Nagarbhavi Circle, Nagarbhavi, Jabalpur\",\"10\":\"36\\/4, Fourth Floor, Soul Space Arena, Outer Ring Road, Doddanekkundi Village, Marathahalli, Jabalpur\",\"11\":\"BBMP 2034\\/69, Block 2, Kaikondrahalli, Varthur Hobli, Sarjapur Road, Jabalpur\",\"12\":\"28, 4th 'B' Cross, Koramangala 5th Block, Jabalpur\",\"13\":\"2, Doddanekkundi, Whitefield Road, Mahadevpura, Whitefield, Jabalpur\",\"14\":\"105, 1st A Cross Road, Jyothi Nivas College Road, Koramangala 5th Block, Jabalpur\",\"15\":\"LR Arcade,4121, Old Airport Road, Jabalpur\",\"16\":\"1085, 14th Main, 18th Cross, Sector 3, HSR, Jabalpur\",\"17\":\"44, 4th B Cross Road, Koramangala 5th Block, Jabalpur\",\"18\":\"20\\/7, 4th & 5th Floor, Swamy Legato, Outer Ring Road, Kadubeesanahalli, Marathahalli, Jabalpur\",\"19\":\"2nd Floor, Soul Space Paradigm,\\nLandmark- Next to Innovative Multiplex, Above Bata Showroom, Outer Ring Road Marathahalli, Jabalpur\",\"20\":\"84, 80 Feet Road, RMV 2nd Stage, New BEL Road, Jabalpur\",\"21\":\"Virginia Mall, 4th Floor, 10,11& 12\\/1,  Ramagondanahalli Village, Whitefield, Jabalpur\",\"22\":\"9\\/1, 1st Floor, Above Surya Nissan, VRR Orchid, Doddanakkundi, Marathahalli, Jabalpur\",\"23\":\"Next to BSNL, HAL 2nd Stage, 80 Feet Road, Indiranagar, Jabalpur\",\"24\":\"298, Namma Metro Pillar 62, 100 Feet Road, Indiranagar, Jabalpur\",\"25\":\"67 & 68, Brigade Solitaire, Opposite to Advaith Hyundai, Residency Road, Jabalpur\",\"26\":\"5th \\u2018a\\u2019 Block, 17th Main Road, JNC Road, Koramangala, Jabalpur\",\"27\":\"5th Floor, Gopalan Innovation Mall, Bannerghatta Road, Jabalpur\",\"28\":\"118, Koramangala Industrial Area, Koramangala 7th Block, Jabalpur\",\"29\":\"Ground Floor, Soul Space Paradigm, Next to Innovative Multiplex, Bata Showroom, Marathahalli, Jabalpur\",\"30\":\"2008, 2nd Floor, 100 Feet Road, Indiranagar, Jabalpur\",\"31\":\"4th & 5th Floor, Sree Premprasad Complex, Opposite Ramaiah Hospital, New BEL Road, Jabalpur\",\"32\":\"2nd Floor, 1st A Cross Road, Jyothi Nivas College Road, 5th Block, Koramangala 5th Block, Jabalpur\",\"33\":\"136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Jabalpur\",\"34\":\"610, 3rd Floor, 12th Main, Off 80 Feet Road, Indiranagar, Jabalpur\",\"35\":\"4th Floor, Building 9, Halcyon Complex, St. Marks Road, Jabalpur\",\"36\":\"115, 3rd Floor, Opposite Raheja Arcade, Koramangala 7th Block, Jabalpur\",\"37\":\"Plot 1135, HAL 2nd Stage, 100 Feet Road, Indiranagar, Jabalpur\",\"38\":\"4 & 5, Green Orchards Layout, 1st Cross, Bannerghatta Road, Jabalpur\",\"39\":\"20, Ground Floor, Phoenix Market City, Whitefield, Jabalpur\",\"40\":\"3, 5th Block, 60 Feet Road, Koramangala 5th Block, Jabalpur\",\"41\":\"22\\/123, Byrathi Village, Bidarahalli Hobli, Hennur, Jabalpur\",\"42\":\"20\\\\5, Panathur Junction, Outer Ring Road, Kadubeessanahalli, Marathahalli, Jabalpur\",\"43\":\"18, Ali Askar Road, Cunningham Road, Jabalpur\",\"44\":\"91, Jyothi Nivas College Road, Koramangala 5th Block, Jabalpur\",\"45\":\"202, Level 2, UB City, Vittal Mallya Road, Lavelle Road, Jabalpur\",\"46\":\"23, Near Mangala Kalyana Mantapa, MIG, KHB Colony, Koramangala 5th Block, Jabalpur\",\"47\":\"122\\/B, Jyothi Nivas Road, 5th Block, Koramangala 5th Block, Jabalpur\",\"48\":\"4, Opposite NMKRV College, 21st C Cross Road, 3rd Block, Jayanagar, Jabalpur\",\"49\":\"770, Escape Hotel & Spa, 12th Main, 100 Feet Road, Indiranagar, Jabalpur\",\"50\":\"8, 3rd Floor, Allied Grande Plaza, Diagonally Opposite Garuda Mall, Magrath Road, Brigade Road, Jabalpur\",\"51\":\"JW Marriott, 24\\/1, Vittal Mallya Road, Lavelle Road, Jabalpur\",\"52\":\"30, B.R.Plaza, 4th Floor, 4th Cross, CMR Road, HRBR Layout, Kalyan Nagar, Jabalpur\",\"53\":\"16\\/3, Commissariat Road, Brigade Road, Jabalpur\",\"54\":\"Level 2, Phoenix Marketcity, Mahadevpura, Whitefield, Jabalpur\",\"55\":\"974, 80 Feet Road, Koramangala 4th Block, Jabalpur\",\"56\":\"43\\/A, 1st Main, Jakkasandra Road,  Near Wipro Park, Koramangala 1st Block, Jabalpur\",\"57\":\"Central Street, Tasker Town, Shivajinagar, Jabalpur\",\"58\":\"413, 100 Feet Road, 4th Block, Next E-Zone Koramangla, Koramangala 4th Block, Jabalpur\",\"59\":\"626, 4th Floor, 80 Feet Road, Beside Reliance Trends, Vinayaka Layout, 2nd Stage, Nagarbhavi, Jabalpur\",\"60\":\"82\\/4B, Next To Wipro Corporate Office, Sarjapur Road, Jabalpur\",\"61\":\"NO 20, C\\/O PAULS CASTLE CASTLE STREET, ASHOK NAGAR\",\"62\":\"3rd Floor, Mantri Square, Sampige Road, Malleshwaram, Jabalpur\",\"63\":\"1\\/5, Muniswamy Garden, Richmond Road, Jabalpur\",\"64\":\"6\\/4, 1st and 2nd Floor, Above Shivananda Stores, Shivananda Circle, Seshadripuram, Jabalpur\",\"65\":\"124, First Floor, KHB colony, Koramangala 5th Block, Jabalpur\",\"66\":\"88, 1st Floor, Outer Ring Road, Marathahalli, Jabalpur\",\"67\":\"100 Feet Road, HAL 2nd Stage, Indiranagar, Jabalpur\",\"68\":\"4th Floor, 448 Big Bazaar Building, SRK Towers, Bannerghatta Road, Jabalpur\",\"69\":\"148\\/1, Bilekhahalli Village, Neat IIM Jabalpur, Arekere Gate, Bannerghatta Road, Jabalpur\",\"70\":\"19\\/2, Kumara Krupa Road, Off Race Course Road, Jabalpur\",\"71\":\"103, Industrial Area, 5th Block, Near Jyothi Nivas College\",\"72\":\"89\\/1, Monnekollal Village, Varthur Hobli, Outer Ring Road, Marathahalli, Jabalpur\",\"73\":\"120, 4th Floor, Lancer Building, Brigade Road, Jabalpur\",\"74\":\"77, Ground Floor, Bellandur Outer Ring Road, Bellandur, Jabalpur\",\"75\":\"26, Opposite Shubh Enclave,  Ambalipura Village, Sarjapur Road, Jabalpur\",\"76\":\"769, 80 Feet Road, Koramangala 4th Block, Jabalpur\",\"77\":\"124, Near Jyothi Nivas College, 1st Cross, KHB Colony\",\"78\":\"1231\\/35\\/2, 24th Main, 7th Phase, Opposite Brigade Palm Springs, JP Nagar, Jabalpur\",\"79\":\"46\\/1, Cobalt Building, Church Street, Jabalpur\"},\"Average budget for two people\":{\"0\":1600,\"1\":1400,\"2\":1000,\"3\":1400,\"4\":1400,\"5\":600,\"6\":1500,\"7\":2500,\"8\":2800,\"9\":650,\"10\":1400,\"11\":1400,\"12\":800,\"13\":1500,\"14\":1400,\"15\":2000,\"16\":1000,\"17\":750,\"18\":1800,\"19\":1300,\"20\":800,\"21\":600,\"22\":1400,\"23\":750,\"24\":1500,\"25\":1200,\"26\":1300,\"27\":900,\"28\":1500,\"29\":1300,\"30\":1400,\"31\":1200,\"32\":1800,\"33\":1500,\"34\":1600,\"35\":1400,\"36\":1800,\"37\":2200,\"38\":750,\"39\":2200,\"40\":1400,\"41\":1600,\"42\":1300,\"43\":1000,\"44\":1200,\"45\":1500,\"46\":800,\"47\":1000,\"48\":750,\"49\":1500,\"50\":2000,\"51\":2200,\"52\":1400,\"53\":1500,\"54\":1800,\"55\":1000,\"56\":1200,\"57\":750,\"58\":1200,\"59\":700,\"60\":1300,\"61\":1500,\"62\":600,\"63\":1000,\"64\":1000,\"65\":300,\"66\":900,\"67\":1300,\"68\":1000,\"69\":750,\"70\":1200,\"71\":750,\"72\":900,\"73\":1200,\"74\":750,\"75\":1800,\"76\":1200,\"77\":750,\"78\":1200,\"79\":1500},\"Zomato user rating\":{\"0\":\"4.9\",\"1\":\"4.8\",\"2\":\"4.7\",\"3\":\"4.7\",\"4\":\"4.7\",\"5\":\"4.7\",\"6\":\"4.6\",\"7\":\"4.6\",\"8\":\"4.6\",\"9\":\"4.6\",\"10\":\"4.5\",\"11\":\"4.5\",\"12\":\"4.5\",\"13\":\"4.5\",\"14\":\"4.5\",\"15\":\"4.5\",\"16\":\"4.5\",\"17\":\"4.5\",\"18\":\"4.5\",\"19\":\"4.5\",\"20\":\"4.5\",\"21\":\"4.5\",\"22\":\"4.4\",\"23\":\"4.4\",\"24\":\"4.4\",\"25\":\"4.4\",\"26\":\"4.4\",\"27\":\"4.4\",\"28\":\"4.4\",\"29\":\"4.4\",\"30\":\"4.4\",\"31\":\"4.4\",\"32\":\"4.4\",\"33\":\"4.4\",\"34\":\"4.4\",\"35\":\"4.4\",\"36\":\"4.4\",\"37\":\"4.4\",\"38\":\"4.4\",\"39\":\"4.4\",\"40\":\"4.4\",\"41\":\"4.3\",\"42\":\"4.3\",\"43\":\"4.3\",\"44\":\"4.3\",\"45\":\"4.3\",\"46\":\"4.3\",\"47\":\"4.3\",\"48\":\"4.3\",\"49\":\"4.3\",\"50\":\"4.3\",\"51\":\"4.3\",\"52\":\"4.3\",\"53\":\"4.3\",\"54\":\"4.3\",\"55\":\"4.3\",\"56\":\"4.3\",\"57\":\"4.3\",\"58\":\"4.3\",\"59\":\"4.3\",\"60\":\"4.3\",\"61\":\"4.3\",\"62\":\"4.3\",\"63\":\"4.3\",\"64\":\"4.3\",\"65\":\"4.3\",\"66\":\"4.3\",\"67\":\"4.2\",\"68\":\"4.2\",\"69\":\"4.2\",\"70\":\"4.2\",\"71\":\"4.2\",\"72\":\"4.2\",\"73\":\"4.2\",\"74\":\"4.2\",\"75\":\"4.2\",\"76\":\"4.2\",\"77\":\"4.2\",\"78\":\"4.2\",\"79\":\"4.2\"}}"}
+    - action_restaurant
+    - slot{"query_restaurant_search": "30 Square in 124, First Floor, KHB colony, Koramangala 5th Block, Jabalpur has been rated 4.3\n"}
+    - utter_restaurant_search_results
+    - utter_ask_send_email
+* affirm
+    - utter_ask_email
+* send_email{"email": "sasi.424@gmail.com"}
+    - slot{"email": "sasi.424@gmail.com"}
+    - action_email
+    - utter_goodbye
+    - export
+	- action_restarted
+
+## Generated Story 2182074300828345856
+* greet
+    - utter_greet
+* restaurant_search{"location": "jabalpur"}
+    - slot{"location": "jabalpur"}
+    - validate_location
+    - slot{"location": "jabalpur"}
+    - get_all_search_results
+    - slot{"location": "jabalpur"}
+    - slot{"requested_slot": "cuisine"}
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
+    - validate_cuisine
+    - slot{"cuisine": "mexican"}
+    - get_all_search_results
+    - slot{"cuisine": "mexican"}
+    - slot{"requested_slot": "price"}
+* restaurant_search{"price": "2"}
+    - slot{"price": "2"}
+    - validate_price
+    - slot{"price": "2"}
+    - get_all_search_results
+    - slot{"price": "2"}
+    - slot{"full_restaurant_search": "{\"Restaurant Name\":{\"0\":\"Coffee Culture\",\"1\":\"Coffee Culture\",\"2\":\"Coffee Culture\"},\"Restaurant locality address\":{\"0\":\"Main Road, Sadar Bazaar, Cantt, Jabalpur\",\"1\":\"Main Road, Sadar Bazaar, Cantt, Jabalpur\",\"2\":\"Main Road, Sadar Bazaar, Cantt, Jabalpur\"},\"Average budget for two people\":{\"0\":1200,\"1\":0,\"2\":1000},\"Zomato user rating\":{\"0\":\"0\",\"1\":\"0\",\"2\":\"0\"}}"}
+    - action_restaurant
+    - slot{"query_restaurant_search": null}
+* restaurant_search{"price": "3"}
+    - slot{"price": "3"}
+    - action_restaurant
+    - slot{"query_restaurant_search": "Coffee Culture in Main Road, Sadar Bazaar, Cantt, Jabalpur has been rated 0\nCoffee Culture in Main Road, Sadar Bazaar, Cantt, Jabalpur has been rated 0\n"}
+    - utter_restaurant_search_results
+    - utter_ask_send_email
+* deny
+    - action_bye
+    - reset_slots
+    - export
+	- action_restarted
