@@ -1,0 +1,18 @@
+{
+  "location_suggestions": [
+    {
+      "entity_type": "city",
+      "entity_id": 5,
+      "title": "Pune",
+      "latitude": 18.520469,
+      "longitude": 73.85662,
+      "city_id": 5,
+      "city_name": "Pune",
+      "country_id": 1,
+      "country_name": "India"
+    }
+  ],
+  "status": "success",
+  "has_more": 0,
+  "has_total": 0
+}
