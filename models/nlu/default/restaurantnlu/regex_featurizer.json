@@ -8,12 +8,16 @@
         "pattern": "((no)|(No)|(NO))[^\\s]*"
     },
     {
+        "name": "emailid",
+        "pattern": "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$"
+    },
+    {
         "name": "greet",
-        "pattern": "((hey)|(hi)|(Hey)|(Hi)|(Hello)|(hello))[^\\s]*"
+        "pattern": "((hey)|(hi)|(Hey)|(Hi)|(Hello)|(hello)|(hola)|(heya))[^\\s]*"
     },
     {
         "name": "location",
-        "pattern": "\\b\\s*(?i)((Ahmedabad)|(Bangalore)|(Chennai)|(Delhi)|(Hyderabad)|(Kolkata)|(Mumbai)|(Pune)|(Agra)|(Ajmer)|(Aligarh)|(Allahabad)|(Amravati)|(Amritsar)|(Asansol)|(Aurangabad)|(Bareilly)|(Belgaum)|(Bhavnagar)|(Bhiwandi)|(Bhopal)|(Bhubaneswar)|(Bikaner)|(Bokaro Steel City)|(Chandigarh)|(Coimbatore)|(Cuttack)|(Dehradun)|(Dhanbad)|(Durg-Bhilai Nagar)|(Durgapur)|(Erode)|(Faridabad)|(Firozabad)|(Ghaziabad)|(Gorakhpur)|(Gulbarga)|(Guntur)|(Gurgaon)|(Guwahati)|(Gwalior)|(Hubli-Dharwad)|(Indore)|(Jabalpur)|(Jaipur)|(Jalandhar)|(Jammu)|(Jamnagar)|(Jamshedpur)|(Jhansi)|(Jodhpur)|(Kannur)|(Kanpur)|(Kakinada)|(Kochi)|(Kottayam)|(Kolhapur)|(Kollam)|(Kota)|(Kozhikode)|(Kurnool)|(Lucknow)|(Ludhiana)|(Madurai)|(Malappuram)|(Mathura)|(Goa)|(Mangalore)|(Meerut)|(Moradabad)|(Mysore)|(Nagpur)|(Nanded)|(Nashik)|(Nellore)|(Noida)|(Palakkad)|(Patna)|(Pondicherry)|(Raipur)|(Rajkot)|(Rajahmundry)|(Ranchi)|(Rourkela)|(Salem)|(Sangli)|(Siliguri)|(Solapur)|(Srinagar)|(Sultanpur)|(Surat)|(Thiruvananthapuram)|(Thrissur)|(Tiruchirappalli)|(Tirunelveli)|(Tiruppur)|(Ujjain)|(Vijayapura)|(Vadodara)|(Varanasi)|(Vasai-Virar)|(Vijayawada)|(Visakhapatnam)|(Warangal))"
+        "pattern": "\\b\\s*(?i)((Ahmedabad)|(Bangalore)|(bengaluru)|(bangloor)|(banglore)|(Chennai)|(chenai)|(chenaii)|(kolkatta)|(Kalkatta)|(Calcutta)|(madras)|(chenaii)|(Delhi)|(gurugram)|(Hyderabad)|(Kolkata)|(Mumbai)|(Bombay)|(Bambai)|(Pune)|(Poona)|(Agra)|(Ajmer)|(Aligarh)|(Allahabad)|(Amravati)|(Amritsar)|(Asansol)|(Aurangabad)|(Bareilly)|(Belgaum)|(Bhavnagar)|(Bhiwandi)|(Bhopal)|(Bhubaneswar)|(Bikaner)|(Bokaro Steel City)|(Chandigarh)|(Coimbatore)|(Cuttack)|(Dehradun)|(Dhanbad)|(Durg-Bhilai Nagar)|(Durgapur)|(Erode)|(Faridabad)|(Firozabad)|(Ghaziabad)|(Gorakhpur)|(Gulbarga)|(Guntur)|(Gurgaon)|(Guwahati)|(Gwalior)|(Hubli-Dharwad)|(Indore)|(Jabalpur)|(Jaipur)|(Jalandhar)|(Jammu)|(Jamnagar)|(Jamshedpur)|(Jhansi)|(Jodhpur)|(Kannur)|(Kanpur)|(Kakinada)|(Kochi)|(Kottayam)|(Kolhapur)|(Kollam)|(Kota)|(Kozhikode)|(Kurnool)|(Lucknow)|(Ludhiana)|(Madurai)|(Malappuram)|(Mathura)|(Goa)|(Mangalore)|(Meerut)|(Moradabad)|(Mysore)|(Nagpur)|(Nanded)|(Nashik)|(Nellore)|(Noida)|(Palakkad)|(Patna)|(Pondicherry)|(Raipur)|(Rajkot)|(Rajahmundry)|(Ranchi)|(Rourkela)|(Salem)|(Sangli)|(Siliguri)|(Solapur)|(Srinagar)|(Sultanpur)|(Surat)|(Thiruvananthapuram)|(Thrissur)|(Tiruchirappalli)|(Tirunelveli)|(Tiruppur)|(Ujjain)|(Vijayapura)|(Vadodara)|(Varanasi)|(Vasai-Virar)|(Vijayawada)|(Visakhapatnam)|(Vishakapattanam)|(Warangal))"
     },
     {
         "name": "lower_price_limit",

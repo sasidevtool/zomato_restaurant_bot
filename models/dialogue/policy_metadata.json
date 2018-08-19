@@ -2,23 +2,23 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "price",
         "cuisine",
-        "location",
-        "email"
-      ]
-    },
-    "get_all_search_results": {
-      "slots": [
-        "full_restaurant_search",
-        "requested_slot",
         "price",
-        "cuisine",
+        "email",
         "location"
       ]
     },
     "validate_location": {
       "slots": [
+        "location"
+      ]
+    },
+    "get_all_search_results": {
+      "slots": [
+        "cuisine",
+        "requested_slot",
+        "price",
+        "full_restaurant_search",
         "location"
       ]
     },
@@ -42,13 +42,13 @@
         "email"
       ]
     },
-    "action_bye": {
+    "utter_goodbye": {
       "slots": []
     },
     "action_restarted": {
       "slots": []
     },
-    "utter_goodbye": {
+    "action_bye": {
       "slots": []
     }
   },

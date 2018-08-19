@@ -925,7 +925,7 @@
           {
             "start": 78,
             "end": 88,
-            "value": "300 to 700",
+            "value": "2",
             "entity": "price"
           },
           {
@@ -2004,6 +2004,162 @@
           }
         ],
         "text": "\\\\carcus@mac.com"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 28,
+            "value": "2",
+            "entity": "price"
+          }
+        ],
+        "text": "I prefer between 300 and 700"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "2",
+            "entity": "price"
+          }
+        ],
+        "text": "300 and 700"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "2",
+            "entity": "price"
+          }
+        ],
+        "text": "between 300 and 700"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 15,
+            "value": "vizag",
+            "entity": "location"
+          }
+        ],
+        "text": "I live in vizag"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 28,
+            "end": 33,
+            "value": "vizag",
+            "entity": "location"
+          }
+        ],
+        "text": "Show me some restaurants in vizag"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "vizag",
+            "entity": "location"
+          }
+        ],
+        "text": "vizag"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 41,
+            "end": 50,
+            "value": "Rishikesh",
+            "entity": "location"
+          }
+        ],
+        "text": "Can you suggest some good restaurants in Rishikesh"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 41,
+            "end": 48,
+            "value": "America",
+            "entity": "location"
+          }
+        ],
+        "text": "Can you suggest some good restaurants in America"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 41,
+            "end": 50,
+            "value": "Telangana",
+            "entity": "location"
+          }
+        ],
+        "text": "Can you suggest some good restaurants in Telangana"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 15,
+            "end": 24,
+            "value": "Rishikesh",
+            "entity": "location"
+          }
+        ],
+        "text": "restaurants in Rishikesh"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Rishikesh",
+            "entity": "location"
+          }
+        ],
+        "text": "Rishikesh"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 29,
+            "value": "Rishikesh",
+            "entity": "location"
+          }
+        ],
+        "text": "good restaurants in Rishikesh"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "America",
+            "entity": "location"
+          }
+        ],
+        "text": "restaurants in America"
       }
     ],
     "regex_features": [
@@ -2016,12 +2172,16 @@
         "pattern": "((no)|(No)|(NO))[^\\s]*"
       },
       {
+        "name": "emailid",
+        "pattern": "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$"
+      },
+      {
         "name": "greet",
-        "pattern": "((hey)|(hi)|(Hey)|(Hi)|(Hello)|(hello))[^\\s]*"
+        "pattern": "((hey)|(hi)|(Hey)|(Hi)|(Hello)|(hello)|(hola)|(heya))[^\\s]*"
       },
       {
         "name": "location",
-        "pattern": "\\b\\s*(?i)((Ahmedabad)|(Bangalore)|(Chennai)|(Delhi)|(Hyderabad)|(Kolkata)|(Mumbai)|(Pune)|(Agra)|(Ajmer)|(Aligarh)|(Allahabad)|(Amravati)|(Amritsar)|(Asansol)|(Aurangabad)|(Bareilly)|(Belgaum)|(Bhavnagar)|(Bhiwandi)|(Bhopal)|(Bhubaneswar)|(Bikaner)|(Bokaro Steel City)|(Chandigarh)|(Coimbatore)|(Cuttack)|(Dehradun)|(Dhanbad)|(Durg-Bhilai Nagar)|(Durgapur)|(Erode)|(Faridabad)|(Firozabad)|(Ghaziabad)|(Gorakhpur)|(Gulbarga)|(Guntur)|(Gurgaon)|(Guwahati)|(Gwalior)|(Hubli-Dharwad)|(Indore)|(Jabalpur)|(Jaipur)|(Jalandhar)|(Jammu)|(Jamnagar)|(Jamshedpur)|(Jhansi)|(Jodhpur)|(Kannur)|(Kanpur)|(Kakinada)|(Kochi)|(Kottayam)|(Kolhapur)|(Kollam)|(Kota)|(Kozhikode)|(Kurnool)|(Lucknow)|(Ludhiana)|(Madurai)|(Malappuram)|(Mathura)|(Goa)|(Mangalore)|(Meerut)|(Moradabad)|(Mysore)|(Nagpur)|(Nanded)|(Nashik)|(Nellore)|(Noida)|(Palakkad)|(Patna)|(Pondicherry)|(Raipur)|(Rajkot)|(Rajahmundry)|(Ranchi)|(Rourkela)|(Salem)|(Sangli)|(Siliguri)|(Solapur)|(Srinagar)|(Sultanpur)|(Surat)|(Thiruvananthapuram)|(Thrissur)|(Tiruchirappalli)|(Tirunelveli)|(Tiruppur)|(Ujjain)|(Vijayapura)|(Vadodara)|(Varanasi)|(Vasai-Virar)|(Vijayawada)|(Visakhapatnam)|(Warangal))"
+        "pattern": "\\b\\s*(?i)((Ahmedabad)|(Bangalore)|(bengaluru)|(bangloor)|(banglore)|(Chennai)|(chenai)|(chenaii)|(kolkatta)|(Kalkatta)|(Calcutta)|(madras)|(chenaii)|(Delhi)|(gurugram)|(Hyderabad)|(Kolkata)|(Mumbai)|(Bombay)|(Bambai)|(Pune)|(Poona)|(Agra)|(Ajmer)|(Aligarh)|(Allahabad)|(Amravati)|(Amritsar)|(Asansol)|(Aurangabad)|(Bareilly)|(Belgaum)|(Bhavnagar)|(Bhiwandi)|(Bhopal)|(Bhubaneswar)|(Bikaner)|(Bokaro Steel City)|(Chandigarh)|(Coimbatore)|(Cuttack)|(Dehradun)|(Dhanbad)|(Durg-Bhilai Nagar)|(Durgapur)|(Erode)|(Faridabad)|(Firozabad)|(Ghaziabad)|(Gorakhpur)|(Gulbarga)|(Guntur)|(Gurgaon)|(Guwahati)|(Gwalior)|(Hubli-Dharwad)|(Indore)|(Jabalpur)|(Jaipur)|(Jalandhar)|(Jammu)|(Jamnagar)|(Jamshedpur)|(Jhansi)|(Jodhpur)|(Kannur)|(Kanpur)|(Kakinada)|(Kochi)|(Kottayam)|(Kolhapur)|(Kollam)|(Kota)|(Kozhikode)|(Kurnool)|(Lucknow)|(Ludhiana)|(Madurai)|(Malappuram)|(Mathura)|(Goa)|(Mangalore)|(Meerut)|(Moradabad)|(Mysore)|(Nagpur)|(Nanded)|(Nashik)|(Nellore)|(Noida)|(Palakkad)|(Patna)|(Pondicherry)|(Raipur)|(Rajkot)|(Rajahmundry)|(Ranchi)|(Rourkela)|(Salem)|(Sangli)|(Siliguri)|(Solapur)|(Srinagar)|(Sultanpur)|(Surat)|(Thiruvananthapuram)|(Thrissur)|(Tiruchirappalli)|(Tirunelveli)|(Tiruppur)|(Ujjain)|(Vijayapura)|(Vadodara)|(Varanasi)|(Vasai-Virar)|(Vijayawada)|(Visakhapatnam)|(Vishakapattanam)|(Warangal))"
       },
       {
         "name": "lower_price_limit",
@@ -2043,6 +2203,67 @@
           "Chinese",
           "Chines",
           "chines"
+        ]
+      },
+      {
+        "value": "Bangalore",
+        "synonyms": [
+          "bengaluru",
+          "bangloor",
+          "banglore"
+        ]
+      },
+      {
+        "value": "Visakhapatnam",
+        "synonyms": [
+          "Vishakapattanam",
+          "Visakapattanam",
+          "Visakhapattnam",
+          "vizag",
+          "Vizag"
+        ]
+      },
+      {
+        "value": "pune",
+        "synonyms": [
+          "poona",
+          "poon"
+        ]
+      },
+      {
+        "value": "gurgaon",
+        "synonyms": [
+          "gurugram"
+        ]
+      },
+      {
+        "value": "chennai",
+        "synonyms": [
+          "chenai",
+          "madras",
+          "chenaii"
+        ]
+      },
+      {
+        "value": "delhi",
+        "synonyms": [
+          "New Delhi",
+          "Dilli"
+        ]
+      },
+      {
+        "value": "Mumbai",
+        "synonyms": [
+          "Bombay",
+          "Bambai"
+        ]
+      },
+      {
+        "value": "Kolkata",
+        "synonyms": [
+          "kolkatta",
+          "Calcutta",
+          "Kalkatta"
         ]
       },
       {

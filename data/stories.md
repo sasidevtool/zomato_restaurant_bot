@@ -853,6 +853,137 @@
     - export
 	- action_restarted
 
+## Generated Story -4181568588208725183
+* greet
+    - utter_greet
+* restaurant_search
+    - validate_location
+    - slot{"location": null}
+* restaurant_search{"location": "allahabad"}
+    - slot{"location": "allahabad"}
+    - validate_location
+    - slot{"location": "allahabad"}
+    - get_all_search_results
+    - slot{"location": "allahabad"}
+    - slot{"requested_slot": "cuisine"}
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - validate_cuisine
+    - slot{"cuisine": "chinese"}
+    - get_all_search_results
+    - slot{"cuisine": "chinese"}
+    - slot{"requested_slot": "price"}
+* restaurant_search{"price": "3"}
+    - slot{"price": "3"}
+    - validate_price
+    - slot{"price": "3"}
+    - get_all_search_results
+    - slot{"price": "3"}
+    - slot{"full_restaurant_search": "{\"Restaurant Name\":{\"0\":\"Old School Cafe\",\"1\":\"Sagar Ratna\",\"2\":\"El Chico Restaurant\",\"3\":\"Barbeque Nation\",\"4\":\"Yame Food Court\",\"5\":\"Factory Kitchen by Pantry Car\",\"6\":\"The Tamarind Tree\",\"7\":\"Friends Forever\",\"8\":\"Moti Mahal Delux Tandoori Trail\",\"9\":\"Relish Restaurant- The Legend Hotel\",\"10\":\"Hotel Ravisha Continental\",\"11\":\"Haldiram Bhujiawala\",\"12\":\"Dewsis\",\"13\":\"Celebrations\",\"14\":\"Hotel Kanha Shyam\",\"15\":\"Moti Mahal Delux\",\"16\":\"Jade Garden\",\"17\":\"Kohinoor Restaurant\",\"18\":\"Shahenshah Fast Food\",\"19\":\"Tandoor Restaurant\",\"20\":\"Dosa Plaza\",\"21\":\"Makkhan's Restaurant\",\"22\":\"Old Town\",\"23\":\"Dilli Galiyara\",\"24\":\"Meals on Wheels\",\"25\":\"The 7 Shots\",\"26\":\"Chhappan Bhog\",\"27\":\"Hot n Cool\",\"28\":\"Gay Time Family Restaurant\",\"29\":\"Reserveseats\",\"30\":\"Shri Vrindavan\",\"31\":\"Connoisseur\",\"32\":\"Mela\",\"33\":\"The Moghal\",\"34\":\"Kazuza Ind.\",\"35\":\"Veggie Galaxy\",\"36\":\"Dynasty Restaurant - Imperial House\",\"37\":\"Bliss Restro\",\"38\":\"Bebo's Kitchen\",\"39\":\"U.P. 70 Resto\",\"40\":\"Indish\",\"41\":\"Tamboora\",\"42\":\"New Amber Cafe\",\"43\":\"Cafe Eighteen Sixty Six\",\"44\":\"Food Village Restaurant\",\"45\":\"Rang Mahal - Hotel Ajay International\",\"46\":\"Jai Shree Shankar Punjabi Dhaba\",\"47\":\"Mera Gaon\",\"48\":\"King Classic Restaurant\",\"49\":\"Temptation's\",\"50\":\"Chill Lounge \",\"51\":\"Shahi Darbar Restaurant\",\"52\":\"Mirchi The Taste of India\",\"53\":\"Aahar Pure Vegetarian Restaurant\",\"54\":\"Zimana\",\"55\":\"Karan's Restaurant\",\"56\":\"The Mist Houkh Lounge\",\"57\":\"Zayka\",\"58\":\"Rozana It's Fun Food\",\"59\":\"Rohit Dosa Corner\",\"60\":\"China Town Fast Food\",\"61\":\"Ten 11\",\"62\":\"The Biryani Cafe\",\"63\":\"Senses - Hotel DPS Inn\",\"64\":\"Kwality Restaurant\",\"65\":\"Raju Kitchen Restaurant\",\"66\":\"Hotel Sundaram Restaurant\",\"67\":\"Star Family Restaurant\",\"68\":\"Tantra Restaurant\",\"69\":\"Dilli Chicken Darbar\",\"70\":\"Mehfil Restaurant\",\"71\":\"New Sizzler Point\",\"72\":\"Lucky Snacks & Sweets\",\"73\":\"Indian Kitchen Cart\",\"74\":\"Aryan Restaurant & Coffee House\",\"75\":\"Nandan Restaurant\",\"76\":\"Dalchini Restaurant & Banquet\",\"77\":\"Hot Bite Restro\",\"78\":\"Govind's Vegetarian Restaurant\",\"79\":\"N.K Chinese Food Corner\"},\"Restaurant locality address\":{\"0\":\"33\\/2\\/A, Stretchy Road, Civil Lines, Allahabad\",\"1\":\"3\\/3, Near Balson Crossing, Hashimpur Road, Tagore Town, Allahabad\",\"2\":\"142A, 32, Mahatma Gandhi, Civil Lines, Allahabad\",\"3\":\"Fifth Floor, P Square Mall, MG Road, Civil Lines, Allahabad\",\"4\":\"78 A, Muir Road, Ashok Nagar Crossing, Ashok Nagar, Allahabad\",\"5\":\"26, Tashkand Marg, Madhopur, Civil Lines, Allahabad\",\"6\":\"60 C, Thornhill Road, Civil Lines, Allahabad\",\"7\":\"13\\/13, Sardar Patel Marg, Civil Lines, Allahabad\",\"8\":\"Shop 18A, Second Floor, Sardar Patel Marg, Above HDFC Bank, Civil Lines, Allahabad\",\"9\":\"The Legend Hotel, First Floor, 23 C, Thornhill Road, Civil Lines, Allahabad\",\"10\":\"57 A, Purshottamdas Tandon Marg, Civil Lines, Allahabad\",\"11\":\"25, Tashkent Marg, Civil Lines, Allahabad\",\"12\":\"2, MG Marg, Opposite Hanuman Mandir, Civil Lines, Allahabad\",\"13\":\"3D\\/1, Near Prithvi Garden, Cooper Road, Civil Lines, Allahabad\",\"14\":\"Allahabad HO, Civil Lines, Allahabad\",\"15\":\"Second Floor, Vinayak City Center Mall, SP Marg, Civil Lines, Allahabad\",\"16\":\"123\\/27A, MG Marg, Civil Lines, Allahabad\",\"17\":\"LG1 - LG2, Lower Ground Floor, Vinayak Tower, MG Marg, Civil Lines, Allahabad\",\"18\":\"18 A, MG Marg, Civil Lines, Allahabad\",\"19\":\"17\\/33, Mahatama Gandhi Marg, Civil Lines, Allahabad\",\"20\":\"F1, Vinayak Pushp, Elgin Road, Civil Lines, Allahabad\",\"21\":\"39\\/41, Meera Patti, G T Road, Transport Nagar, Near Dhoomanganj, Allahabad\",\"22\":\"60 H\\/2, Thornhill Road, Civil Lines, Allahabad\",\"23\":\"20-22, 2nd Floor, Vinayak City Centre Mall, Sardar Patel Marg, Civil Lines, Allahabad\",\"24\":\"Near G.H.S., Lohia Marg, Civil Lines, Allahabad\",\"25\":\"8C, Sardar Patel Marg, Civil Lines, Allahabad\",\"26\":\"17\\/2, Kutchery Road, Katra, Allahabad\",\"27\":\"262, Armaan Market, Indalpur Road, Mahewa, Near Bank Of Baroda, Naini, Allahabad\",\"28\":\"Shop 1-3, Elgin Road, Civil Lines, Allahabad\",\"29\":\"12\\/22\\/1, Master Zaharool Hasan Road, Mufordganj, Katra, Allahabad\",\"30\":\"BABA CHOURAHA, ASHOK NAGAR ALLAHABAD, Allahabad\",\"31\":\"Hotel Samrat, 49, Mahatma Gandhi Marg, Civil Lines, Allahabad\",\"32\":\"5-A, Sardar Patel Marg, Civil Lines, Allahabad\",\"33\":\"22 A, Sardar Patel Marg, Civil Lines, Allahabad\",\"34\":\"Khan Chauraha, Mahewa East, Near Agriculture Institute, Naini, Allahabad\",\"35\":\"218E\\/71, Ground Floor, P Square Mall, MG Marg, Civil Lines, Allahabad\",\"36\":\"46-A, Hastings Road, Ashok Nagar, Allahabad\",\"37\":\"262, Araman Market, Mahewa, Naini, Allahabad\",\"38\":\"First Floor, Jawed Complex, Near Rajrooppur Police Chowki, Kalindipuram, Allahabad\",\"39\":\"Lowther Road, Near Jain Hospital, George Town, Allahabad\",\"40\":\"Lifafa, Patrika Crossing, Near Rama Medical Store, Stanly Road, Civil Lines, Allahabad\",\"41\":\"77A\\/29, LBS Marg, Near Vishal Mega Mart, Civil Lines, Allahabad\",\"42\":\"MG Road, Civil Lines, Allahabad\",\"43\":\"J-16, Hotel Allahabad Regency, Tashkand Marg, Civil Lines, Allahabad\",\"44\":\"Arya Nagar, Jalwa, Near State Bank of India, Rajrooppur, Allahabad\",\"45\":\"A\\/2\\/D, Lal Bahadur Shastri Marg, Civil Lines, Allahabad\",\"46\":\"29\\/61, M.G.Road, Civil Lines, Allahabad\",\"47\":\"Main GT Road, Chaddha, Bamrauli, Allahabad\",\"48\":\"48\\/8 Stratchy Road, Civil Lines, Allahabad\",\"49\":\"15 Katra Road, Balrampur House, Katra, Allahabad\",\"50\":\"Stretchy Road, Near Vishal Mega Mart, Civil Lines, Allahabad\",\"51\":\"30, Tashkent Marg, Civil Lines, Allahabad\",\"52\":\"Vishnapuri Colony, Ghayasuddinpur, Dhoomanganj, Allahabad\",\"53\":\"74\\/3\\/1\\/Muirabad Crossing Stanley Road, Civil Lines, Allahabad\",\"54\":\"Hotel Kanha Residency, 5C\\/7, 5C\\/8 Clive Road, Civil Lines Allahabad\",\"55\":\"27, Pritam Nagar, GT Road, Dhoomanganj, Allahabad\",\"56\":\"19A, M.G.Road, Civil Lines, Allahabad\",\"57\":\"G.T.Road, Sector 5, Transport Nagar, Dhoomanganj, Allahabad\",\"58\":\"10\\/12 Tandon Road, Civil Lines, Allahabad\",\"59\":\"Old Saket Hospital, Allahpur, Allahabad\",\"60\":\"Near TPS College, Meerapur Road, Civil Lines, Allahabad\",\"61\":\"Near Khan Chauraha, Mahewa, Naini, Allahabad\",\"62\":\"Hotel J.K. Palace, Tushkant Marg, Civil Lines, Allahabad\",\"63\":\"70G, 55A\\/3 Lohia Marg, Civil Lines, Allahabad\",\"64\":\"26\\/1, MG Marg, Civil Lines, Allahabad\",\"65\":\"Tandon Road, Civil Lines, Allahabad\",\"66\":\"39\\/44, V.N. Marg, Meergunj, Allahabad\",\"67\":\"Sulem Sarai Bazar, Shankar Telars Gali, Dhoomanganj, Allahabad\",\"68\":\"140A\\/30A, MG Marg, Civil Lines, Allahabad\",\"69\":\"8 S.N Leader Road, Allahabad\",\"70\":\"1st Floor, P Square Mall, MG Marg, Civil Lines, Allahabad\",\"71\":\"8\\/10 MG Road, Opposite Bishop Johnson School, Civil Lines, Allahabad\",\"72\":\"14, Sardar Patel Marg, Civil Lines, Allahabad\",\"73\":\"Gangotri nagar Agriculture Naini Allahabad 211008, Allahabad\",\"74\":\"Riva Road, Gangotri Nagar, Naini, Allahabad\",\"75\":\"35\\/27, Malviya Road, George Town, Allahabad\",\"76\":\"Near Dhobi Petrol Pump Chauraha, Civil Lines, Allahabad\",\"77\":\"Adjacent to Roshini Garden, Gaughat Road, Mutthiganj, Allahabad\",\"78\":\"124-A, Mahatma Gandhi Marg, Civil Lines, Allahabad\",\"79\":\"Rajapur, Allahabad\"},\"Average budget for two people\":{\"0\":1000,\"1\":600,\"2\":800,\"3\":1200,\"4\":300,\"5\":300,\"6\":500,\"7\":600,\"8\":800,\"9\":1100,\"10\":600,\"11\":700,\"12\":600,\"13\":600,\"14\":900,\"15\":600,\"16\":800,\"17\":800,\"18\":400,\"19\":500,\"20\":500,\"21\":450,\"22\":500,\"23\":800,\"24\":500,\"25\":350,\"26\":600,\"27\":300,\"28\":500,\"29\":700,\"30\":400,\"31\":800,\"32\":500,\"33\":300,\"34\":500,\"35\":600,\"36\":1000,\"37\":500,\"38\":400,\"39\":450,\"40\":500,\"41\":600,\"42\":400,\"43\":1000,\"44\":500,\"45\":2000,\"46\":0,\"47\":850,\"48\":0,\"49\":400,\"50\":800,\"51\":0,\"52\":600,\"53\":400,\"54\":500,\"55\":200,\"56\":0,\"57\":500,\"58\":300,\"59\":200,\"60\":150,\"61\":500,\"62\":300,\"63\":600,\"64\":700,\"65\":0,\"66\":600,\"67\":500,\"68\":0,\"69\":400,\"70\":500,\"71\":450,\"72\":350,\"73\":400,\"74\":350,\"75\":200,\"76\":0,\"77\":500,\"78\":700,\"79\":250},\"Zomato user rating\":{\"0\":\"3.8\",\"1\":\"3.7\",\"2\":\"3.6\",\"3\":\"3.6\",\"4\":\"3.5\",\"5\":\"3.4\",\"6\":\"3.4\",\"7\":\"3.4\",\"8\":\"3.4\",\"9\":\"3.4\",\"10\":\"3.4\",\"11\":\"3.3\",\"12\":\"3.3\",\"13\":\"3.3\",\"14\":\"3.3\",\"15\":\"3.3\",\"16\":\"3.3\",\"17\":\"3.3\",\"18\":\"3.3\",\"19\":\"3.2\",\"20\":\"3.2\",\"21\":\"3.2\",\"22\":\"3.2\",\"23\":\"3.2\",\"24\":\"3.3\",\"25\":\"3.2\",\"26\":\"3.2\",\"27\":\"3.2\",\"28\":\"3.2\",\"29\":\"3.2\",\"30\":\"3.2\",\"31\":\"3.2\",\"32\":\"3.2\",\"33\":\"3.2\",\"34\":\"3.2\",\"35\":\"3.2\",\"36\":\"3.3\",\"37\":\"3.2\",\"38\":\"3.2\",\"39\":\"3.2\",\"40\":\"3.2\",\"41\":\"3.2\",\"42\":\"3.2\",\"43\":\"3.2\",\"44\":\"3.2\",\"45\":\"3.2\",\"46\":\"3.2\",\"47\":\"3.2\",\"48\":\"3.2\",\"49\":\"3.1\",\"50\":\"3.0\",\"51\":\"0\",\"52\":\"0\",\"53\":\"0\",\"54\":\"0\",\"55\":\"0\",\"56\":\"0\",\"57\":\"0\",\"58\":\"0\",\"59\":\"0\",\"60\":\"0\",\"61\":\"0\",\"62\":\"0\",\"63\":\"0\",\"64\":\"0\",\"65\":\"0\",\"66\":\"0\",\"67\":\"0\",\"68\":\"0\",\"69\":\"0\",\"70\":\"0\",\"71\":\"0\",\"72\":\"0\",\"73\":\"0\",\"74\":\"0\",\"75\":\"0\",\"76\":\"0\",\"77\":\"0\",\"78\":\"0\",\"79\":\"0\"}}"}
+    - action_restaurant
+    - slot{"query_restaurant_search": "Old School Cafe in 33/2/A, Stretchy Road, Civil Lines, Allahabad has been rated 3.8\nEl Chico Restaurant in 142A, 32, Mahatma Gandhi, Civil Lines, Allahabad has been rated 3.6\nBarbeque Nation in Fifth Floor, P Square Mall, MG Road, Civil Lines, Allahabad has been rated 3.6\nMoti Mahal Delux Tandoori Trail in Shop 18A, Second Floor, Sardar Patel Marg, Above HDFC Bank, Civil Lines, Allahabad has been rated 3.4\nRelish Restaurant- The Legend Hotel in The Legend Hotel, First Floor, 23 C, Thornhill Road, Civil Lines, Allahabad has been rated 3.4\n"}
+    - utter_restaurant_search_results
+    - utter_ask_send_email
+* affirm
+    - utter_ask_email
+* send_email{"email": "sasi.424@gmail.com"}
+    - slot{"email": "sasi.424@gmail.com"}
+    - action_email
+    - slot{"email": "sasi.424@gmail.com"}
+    - action_bye
+    - reset_slots
+    - export
+	- action_restarted
+	
+## Generated Story 2867671120161483336
+* greet
+    - utter_greet
+* restaurant_search
+    - get_all_search_results
+    - slot{"requested_slot": "location"}
+* restaurant_search{"location": "Visakhapatnam"}
+    - slot{"location": "Visakhapatnam"}
+    - validate_location
+    - slot{"location": "Visakhapatnam"}
+    - get_all_search_results
+    - slot{"location": "Visakhapatnam"}
+    - slot{"requested_slot": "cuisine"}
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
+    - validate_cuisine
+    - slot{"cuisine": "mexican"}
+    - get_all_search_results
+    - slot{"cuisine": "mexican"}
+    - slot{"requested_slot": "price"}
+* restaurant_search{"price": "1"}
+    - slot{"price": "1"}
+    - validate_price
+    - slot{"price": "1"}
+    - get_all_search_results
+    - slot{"price": "1"}
+    - slot{"full_restaurant_search": "{\"Restaurant Name\":{\"0\":\"Flying Spaghetti Monster\",\"1\":\"Upland Bistro\",\"2\":\"The Hungry Hippo Resto Cafe\",\"3\":\"The Eatery - Four Points By Sheraton\",\"4\":\"The Egg Stop & Mexico's Chicken Poppers\",\"5\":\"Sam's Griddle\",\"6\":\"Tex- Mex Burger & Burrito Kitchen\"},\"Restaurant locality address\":{\"0\":\"10-50-12\\/F2, Sai Dakshata Complex, Beside Lenovo Showroom,   Visakhapatnam, Waltair Uplands, Waltair Uplands, Vizag\",\"1\":\"sai dakshita complex, 10-50-12\\/3, first floor, Waltair uplands Waltair Main Road Ram Nagar Visakhapatnam, Andhra Pradesh 530003 India\",\"2\":\"50-49-43\\/A, TPT Colony, Seethammadhara, Vizag\",\"3\":\"Four Points By Sheraton, 10-28-3, Waltair Main Road, Waltair Uplands, Visakhapatnam\",\"4\":\"50-50-22, NRI Hospital Road, Balayya Sastri Layout, Seethammadara, Visakhapatnam\",\"5\":\"3rd Floor, Srikanya Canopy, Waltair Main Road, Siripuram, Vizag\",\"6\":\"Been Food Junction, MVP Road, Sector 10, MVP Colony, Visakhapatnam\"},\"Average budget for two people\":{\"0\":1400,\"1\":1200,\"2\":600,\"3\":1500,\"4\":350,\"5\":1000,\"6\":400},\"Zomato user rating\":{\"0\":\"4.5\",\"1\":\"4.4\",\"2\":\"3.9\",\"3\":\"3.8\",\"4\":\"3.5\",\"5\":\"3.4\",\"6\":\"3.3\"}}"}
+    - action_restaurant
+    - slot{"query_restaurant_search": null}
+* restaurant_search{"price": "2"}
+    - slot{"price": "2"}
+    - action_restaurant
+    - slot{"query_restaurant_search": "The Hungry Hippo Resto Cafe in 50-49-43/A, TPT Colony, Seethammadhara, Vizag has been rated 3.9\nThe Egg Stop & Mexico's Chicken Poppers in 50-50-22, NRI Hospital Road, Balayya Sastri Layout, Seethammadara, Visakhapatnam has been rated 3.5\nTex- Mex Burger & Burrito Kitchen in Been Food Junction, MVP Road, Sector 10, MVP Colony, Visakhapatnam has been rated 3.3\n"}
+    - utter_restaurant_search_results
+    - utter_ask_send_email
+* deny
+    - action_bye
+    - reset_slots
+    - export
+	- action_restarted
+	
+## Generated Story -8312113386869263583
+* greet
+    - utter_greet
+* restaurant_search{"location": "rishikesh"}
+    - slot{"location": "rishikesh"}
+    - validate_location
+    - slot{"location": null}
+* restaurant_search{"location": "allahabad"}
+    - slot{"location": "allahabad"}
+    - validate_location
+    - slot{"location": "allahabad"}
+    - get_all_search_results
+    - slot{"location": "allahabad"}
+    - slot{"requested_slot": "cuisine"}
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - validate_cuisine
+    - slot{"cuisine": "chinese"}
+    - get_all_search_results
+    - slot{"cuisine": "chinese"}
+    - slot{"requested_slot": "price"}
+* restaurant_search{"price": "3"}
+    - slot{"price": "3"}
+    - validate_price
+    - slot{"price": "3"}
+    - get_all_search_results
+    - slot{"price": "3"}
+    - slot{"full_restaurant_search": "{\"Restaurant Name\":{\"0\":\"Old School Cafe\",\"1\":\"Sagar Ratna\",\"2\":\"El Chico Restaurant\",\"3\":\"Barbeque Nation\",\"4\":\"Yame Food Court\",\"5\":\"Factory Kitchen by Pantry Car\",\"6\":\"The Tamarind Tree\",\"7\":\"Friends Forever\",\"8\":\"Moti Mahal Delux Tandoori Trail\",\"9\":\"Relish Restaurant- The Legend Hotel\",\"10\":\"Hotel Ravisha Continental\",\"11\":\"Haldiram Bhujiawala\",\"12\":\"Dewsis\",\"13\":\"Celebrations\",\"14\":\"Hotel Kanha Shyam\",\"15\":\"Moti Mahal Delux\",\"16\":\"Jade Garden\",\"17\":\"Kohinoor Restaurant\",\"18\":\"Shahenshah Fast Food\",\"19\":\"Tandoor Restaurant\",\"20\":\"Dosa Plaza\",\"21\":\"Makkhan's Restaurant\",\"22\":\"Old Town\",\"23\":\"Dilli Galiyara\",\"24\":\"Meals on Wheels\",\"25\":\"The 7 Shots\",\"26\":\"Chhappan Bhog\",\"27\":\"Hot n Cool\",\"28\":\"Gay Time Family Restaurant\",\"29\":\"Reserveseats\",\"30\":\"Shri Vrindavan\",\"31\":\"Connoisseur\",\"32\":\"Mela\",\"33\":\"The Moghal\",\"34\":\"Kazuza Ind.\",\"35\":\"Veggie Galaxy\",\"36\":\"Dynasty Restaurant - Imperial House\",\"37\":\"Bliss Restro\",\"38\":\"Bebo's Kitchen\",\"39\":\"U.P. 70 Resto\",\"40\":\"Indish\",\"41\":\"Tamboora\",\"42\":\"New Amber Cafe\",\"43\":\"Cafe Eighteen Sixty Six\",\"44\":\"Food Village Restaurant\",\"45\":\"Rang Mahal - Hotel Ajay International\",\"46\":\"Jai Shree Shankar Punjabi Dhaba\",\"47\":\"Mera Gaon\",\"48\":\"King Classic Restaurant\",\"49\":\"Temptation's\",\"50\":\"Chill Lounge \",\"51\":\"Shahi Darbar Restaurant\",\"52\":\"Mirchi The Taste of India\",\"53\":\"Aahar Pure Vegetarian Restaurant\",\"54\":\"Zimana\",\"55\":\"Karan's Restaurant\",\"56\":\"The Mist Houkh Lounge\",\"57\":\"Zayka\",\"58\":\"Rozana It's Fun Food\",\"59\":\"Rohit Dosa Corner\",\"60\":\"China Town Fast Food\",\"61\":\"Ten 11\",\"62\":\"The Biryani Cafe\",\"63\":\"Senses - Hotel DPS Inn\",\"64\":\"Kwality Restaurant\",\"65\":\"Raju Kitchen Restaurant\",\"66\":\"Hotel Sundaram Restaurant\",\"67\":\"Star Family Restaurant\",\"68\":\"Tantra Restaurant\",\"69\":\"Dilli Chicken Darbar\",\"70\":\"Mehfil Restaurant\",\"71\":\"New Sizzler Point\",\"72\":\"Lucky Snacks & Sweets\",\"73\":\"Indian Kitchen Cart\",\"74\":\"Aryan Restaurant & Coffee House\",\"75\":\"Nandan Restaurant\",\"76\":\"Dalchini Restaurant & Banquet\",\"77\":\"Hot Bite Restro\",\"78\":\"Govind's Vegetarian Restaurant\",\"79\":\"N.K Chinese Food Corner\"},\"Restaurant locality address\":{\"0\":\"33\\/2\\/A, Stretchy Road, Civil Lines, Allahabad\",\"1\":\"3\\/3, Near Balson Crossing, Hashimpur Road, Tagore Town, Allahabad\",\"2\":\"142A, 32, Mahatma Gandhi, Civil Lines, Allahabad\",\"3\":\"Fifth Floor, P Square Mall, MG Road, Civil Lines, Allahabad\",\"4\":\"78 A, Muir Road, Ashok Nagar Crossing, Ashok Nagar, Allahabad\",\"5\":\"26, Tashkand Marg, Madhopur, Civil Lines, Allahabad\",\"6\":\"60 C, Thornhill Road, Civil Lines, Allahabad\",\"7\":\"13\\/13, Sardar Patel Marg, Civil Lines, Allahabad\",\"8\":\"Shop 18A, Second Floor, Sardar Patel Marg, Above HDFC Bank, Civil Lines, Allahabad\",\"9\":\"The Legend Hotel, First Floor, 23 C, Thornhill Road, Civil Lines, Allahabad\",\"10\":\"57 A, Purshottamdas Tandon Marg, Civil Lines, Allahabad\",\"11\":\"25, Tashkent Marg, Civil Lines, Allahabad\",\"12\":\"2, MG Marg, Opposite Hanuman Mandir, Civil Lines, Allahabad\",\"13\":\"3D\\/1, Near Prithvi Garden, Cooper Road, Civil Lines, Allahabad\",\"14\":\"Allahabad HO, Civil Lines, Allahabad\",\"15\":\"Second Floor, Vinayak City Center Mall, SP Marg, Civil Lines, Allahabad\",\"16\":\"123\\/27A, MG Marg, Civil Lines, Allahabad\",\"17\":\"LG1 - LG2, Lower Ground Floor, Vinayak Tower, MG Marg, Civil Lines, Allahabad\",\"18\":\"18 A, MG Marg, Civil Lines, Allahabad\",\"19\":\"17\\/33, Mahatama Gandhi Marg, Civil Lines, Allahabad\",\"20\":\"F1, Vinayak Pushp, Elgin Road, Civil Lines, Allahabad\",\"21\":\"39\\/41, Meera Patti, G T Road, Transport Nagar, Near Dhoomanganj, Allahabad\",\"22\":\"60 H\\/2, Thornhill Road, Civil Lines, Allahabad\",\"23\":\"20-22, 2nd Floor, Vinayak City Centre Mall, Sardar Patel Marg, Civil Lines, Allahabad\",\"24\":\"Near G.H.S., Lohia Marg, Civil Lines, Allahabad\",\"25\":\"8C, Sardar Patel Marg, Civil Lines, Allahabad\",\"26\":\"17\\/2, Kutchery Road, Katra, Allahabad\",\"27\":\"262, Armaan Market, Indalpur Road, Mahewa, Near Bank Of Baroda, Naini, Allahabad\",\"28\":\"Shop 1-3, Elgin Road, Civil Lines, Allahabad\",\"29\":\"12\\/22\\/1, Master Zaharool Hasan Road, Mufordganj, Katra, Allahabad\",\"30\":\"BABA CHOURAHA, ASHOK NAGAR ALLAHABAD, Allahabad\",\"31\":\"Hotel Samrat, 49, Mahatma Gandhi Marg, Civil Lines, Allahabad\",\"32\":\"5-A, Sardar Patel Marg, Civil Lines, Allahabad\",\"33\":\"22 A, Sardar Patel Marg, Civil Lines, Allahabad\",\"34\":\"Khan Chauraha, Mahewa East, Near Agriculture Institute, Naini, Allahabad\",\"35\":\"218E\\/71, Ground Floor, P Square Mall, MG Marg, Civil Lines, Allahabad\",\"36\":\"46-A, Hastings Road, Ashok Nagar, Allahabad\",\"37\":\"262, Araman Market, Mahewa, Naini, Allahabad\",\"38\":\"First Floor, Jawed Complex, Near Rajrooppur Police Chowki, Kalindipuram, Allahabad\",\"39\":\"Lowther Road, Near Jain Hospital, George Town, Allahabad\",\"40\":\"Lifafa, Patrika Crossing, Near Rama Medical Store, Stanly Road, Civil Lines, Allahabad\",\"41\":\"77A\\/29, LBS Marg, Near Vishal Mega Mart, Civil Lines, Allahabad\",\"42\":\"MG Road, Civil Lines, Allahabad\",\"43\":\"J-16, Hotel Allahabad Regency, Tashkand Marg, Civil Lines, Allahabad\",\"44\":\"Arya Nagar, Jalwa, Near State Bank of India, Rajrooppur, Allahabad\",\"45\":\"A\\/2\\/D, Lal Bahadur Shastri Marg, Civil Lines, Allahabad\",\"46\":\"29\\/61, M.G.Road, Civil Lines, Allahabad\",\"47\":\"Main GT Road, Chaddha, Bamrauli, Allahabad\",\"48\":\"48\\/8 Stratchy Road, Civil Lines, Allahabad\",\"49\":\"15 Katra Road, Balrampur House, Katra, Allahabad\",\"50\":\"Stretchy Road, Near Vishal Mega Mart, Civil Lines, Allahabad\",\"51\":\"30, Tashkent Marg, Civil Lines, Allahabad\",\"52\":\"Vishnapuri Colony, Ghayasuddinpur, Dhoomanganj, Allahabad\",\"53\":\"74\\/3\\/1\\/Muirabad Crossing Stanley Road, Civil Lines, Allahabad\",\"54\":\"Hotel Kanha Residency, 5C\\/7, 5C\\/8 Clive Road, Civil Lines Allahabad\",\"55\":\"27, Pritam Nagar, GT Road, Dhoomanganj, Allahabad\",\"56\":\"19A, M.G.Road, Civil Lines, Allahabad\",\"57\":\"G.T.Road, Sector 5, Transport Nagar, Dhoomanganj, Allahabad\",\"58\":\"10\\/12 Tandon Road, Civil Lines, Allahabad\",\"59\":\"Old Saket Hospital, Allahpur, Allahabad\",\"60\":\"Near TPS College, Meerapur Road, Civil Lines, Allahabad\",\"61\":\"Near Khan Chauraha, Mahewa, Naini, Allahabad\",\"62\":\"Hotel J.K. Palace, Tushkant Marg, Civil Lines, Allahabad\",\"63\":\"70G, 55A\\/3 Lohia Marg, Civil Lines, Allahabad\",\"64\":\"26\\/1, MG Marg, Civil Lines, Allahabad\",\"65\":\"Tandon Road, Civil Lines, Allahabad\",\"66\":\"39\\/44, V.N. Marg, Meergunj, Allahabad\",\"67\":\"Sulem Sarai Bazar, Shankar Telars Gali, Dhoomanganj, Allahabad\",\"68\":\"140A\\/30A, MG Marg, Civil Lines, Allahabad\",\"69\":\"8 S.N Leader Road, Allahabad\",\"70\":\"1st Floor, P Square Mall, MG Marg, Civil Lines, Allahabad\",\"71\":\"8\\/10 MG Road, Opposite Bishop Johnson School, Civil Lines, Allahabad\",\"72\":\"14, Sardar Patel Marg, Civil Lines, Allahabad\",\"73\":\"Gangotri nagar Agriculture Naini Allahabad 211008, Allahabad\",\"74\":\"Riva Road, Gangotri Nagar, Naini, Allahabad\",\"75\":\"35\\/27, Malviya Road, George Town, Allahabad\",\"76\":\"Near Dhobi Petrol Pump Chauraha, Civil Lines, Allahabad\",\"77\":\"Adjacent to Roshini Garden, Gaughat Road, Mutthiganj, Allahabad\",\"78\":\"124-A, Mahatma Gandhi Marg, Civil Lines, Allahabad\",\"79\":\"Rajapur, Allahabad\"},\"Average budget for two people\":{\"0\":1000,\"1\":600,\"2\":800,\"3\":1200,\"4\":300,\"5\":300,\"6\":500,\"7\":600,\"8\":800,\"9\":1100,\"10\":600,\"11\":700,\"12\":600,\"13\":600,\"14\":900,\"15\":600,\"16\":800,\"17\":800,\"18\":400,\"19\":500,\"20\":500,\"21\":450,\"22\":500,\"23\":800,\"24\":500,\"25\":350,\"26\":600,\"27\":300,\"28\":500,\"29\":700,\"30\":400,\"31\":800,\"32\":500,\"33\":300,\"34\":500,\"35\":600,\"36\":1000,\"37\":500,\"38\":400,\"39\":450,\"40\":500,\"41\":600,\"42\":400,\"43\":1000,\"44\":500,\"45\":2000,\"46\":0,\"47\":850,\"48\":0,\"49\":400,\"50\":800,\"51\":0,\"52\":600,\"53\":400,\"54\":500,\"55\":200,\"56\":0,\"57\":500,\"58\":300,\"59\":200,\"60\":150,\"61\":500,\"62\":300,\"63\":600,\"64\":700,\"65\":0,\"66\":600,\"67\":500,\"68\":0,\"69\":400,\"70\":500,\"71\":450,\"72\":350,\"73\":400,\"74\":350,\"75\":200,\"76\":0,\"77\":500,\"78\":700,\"79\":250},\"Zomato user rating\":{\"0\":\"3.8\",\"1\":\"3.7\",\"2\":\"3.6\",\"3\":\"3.6\",\"4\":\"3.5\",\"5\":\"3.4\",\"6\":\"3.4\",\"7\":\"3.4\",\"8\":\"3.4\",\"9\":\"3.4\",\"10\":\"3.4\",\"11\":\"3.3\",\"12\":\"3.3\",\"13\":\"3.3\",\"14\":\"3.3\",\"15\":\"3.3\",\"16\":\"3.3\",\"17\":\"3.3\",\"18\":\"3.3\",\"19\":\"3.2\",\"20\":\"3.2\",\"21\":\"3.2\",\"22\":\"3.2\",\"23\":\"3.2\",\"24\":\"3.3\",\"25\":\"3.2\",\"26\":\"3.2\",\"27\":\"3.2\",\"28\":\"3.2\",\"29\":\"3.2\",\"30\":\"3.2\",\"31\":\"3.2\",\"32\":\"3.2\",\"33\":\"3.2\",\"34\":\"3.2\",\"35\":\"3.2\",\"36\":\"3.3\",\"37\":\"3.2\",\"38\":\"3.2\",\"39\":\"3.2\",\"40\":\"3.2\",\"41\":\"3.2\",\"42\":\"3.2\",\"43\":\"3.2\",\"44\":\"3.2\",\"45\":\"3.2\",\"46\":\"3.2\",\"47\":\"3.2\",\"48\":\"3.2\",\"49\":\"3.1\",\"50\":\"3.0\",\"51\":\"0\",\"52\":\"0\",\"53\":\"0\",\"54\":\"0\",\"55\":\"0\",\"56\":\"0\",\"57\":\"0\",\"58\":\"0\",\"59\":\"0\",\"60\":\"0\",\"61\":\"0\",\"62\":\"0\",\"63\":\"0\",\"64\":\"0\",\"65\":\"0\",\"66\":\"0\",\"67\":\"0\",\"68\":\"0\",\"69\":\"0\",\"70\":\"0\",\"71\":\"0\",\"72\":\"0\",\"73\":\"0\",\"74\":\"0\",\"75\":\"0\",\"76\":\"0\",\"77\":\"0\",\"78\":\"0\",\"79\":\"0\"}}"}
+    - action_restaurant
+    - slot{"query_restaurant_search": "Old School Cafe in 33/2/A, Stretchy Road, Civil Lines, Allahabad has been rated 3.8\nEl Chico Restaurant in 142A, 32, Mahatma Gandhi, Civil Lines, Allahabad has been rated 3.6\nBarbeque Nation in Fifth Floor, P Square Mall, MG Road, Civil Lines, Allahabad has been rated 3.6\nMoti Mahal Delux Tandoori Trail in Shop 18A, Second Floor, Sardar Patel Marg, Above HDFC Bank, Civil Lines, Allahabad has been rated 3.4\nRelish Restaurant- The Legend Hotel in The Legend Hotel, First Floor, 23 C, Thornhill Road, Civil Lines, Allahabad has been rated 3.4\n"}
+    - utter_restaurant_search_results
+    - utter_ask_send_email
+* affirm
+    - utter_ask_email
+* restaurant_search{"email": "sasi.424@gmail.com"}
+    - slot{"email": "sasi.424@gmail.com"}
+    - action_email
+    - slot{"email": "sasi.424@gmail.com"}
+    - action_bye
+    - reset_slots
+    - export
+	- action_restarted
+
+
+
+
+
+
 
 
 

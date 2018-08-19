@@ -167,23 +167,6 @@ class ActionValidateCuisine(Action):
 		else:
 			return [SlotSet('cuisine',cuisine)]
 
-class ActionValidatePrice(Action):
-	def name(self):
-		return 'validate_price'
-	
-	def run(self, dispatcher, tracker, domain):
-		prices=['1','2','3']
-		price = tracker.get_slot('price')
-		#response = ""
-		if(price == None):
-			dispatcher.utter_template("utter_invalid_price_range",tracker)
-			return [SlotSet('price',None)]
-		elif(price.lower() not in prices):
-			dispatcher.utter_template("utter_invalid_price_range",tracker)
-			return [SlotSet('price',None)]
-		else:
-			return [SlotSet('price',price)]
-
 import re
 class ActionSendEmail(Action):
 	def name(self):
