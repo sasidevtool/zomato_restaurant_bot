@@ -192,13 +192,17 @@ class ActionSendEmail(Action):
 	def run(self, dispatcher, tracker, domain):
 		price_range = tracker.get_slot('price')
 		email = tracker.get_slot('email')
+		if(email==None):
+			dispatcher.utter_template("utter_email_not_recognized", tracker)
+			return[SlotSet('email',None)]
+			
 		list_email = re.findall('([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)',email) 
 		
 		msg = MIMEMultipart('alternative')
 		
 		search_results = pd.read_json(tracker.get_slot('full_restaurant_search'))
 		if(len(list_email)==0):
-			dispatcher.utter_template("Email Not Found", tracker)
+			dispatcher.utter_template("utter_email_not_recognized", tracker)
 			return[SlotSet('email',email)]
 		elif(len(search_results)==0):
 			msg.attach(MIMEText("Sorry no results found",'html'))

@@ -12,6 +12,9 @@ from rasa_core.policies.keras_policy import KerasPolicy
 from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.policies.fallback import FallbackPolicy
+import warnings
+ 
+warnings.filterwarnings('ignore')
 logger = logging.getLogger(__name__)
 
 
